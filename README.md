@@ -1,6 +1,7 @@
 # material-ui-icon-picker
 
-__COMPONENT DESCRIPTION GOES HERE__
+Presents a [material-ui](http://www.material-ui.com/#/) dialog with an up-to-date list of material icons. allowing the user to pick one.
+The chosen icon will be returned in the `onPick` callback.
 
 
 ## Demo & Examples
@@ -33,18 +34,38 @@ npm install react-material-ui-icon-picker --save
 __EXPLAIN USAGE HERE__
 
 ```
-var MaterialUiIconPicker = require('react-material-ui-icon-picker');
+import MaterialUiIconPicker from 'react-material-ui-icon-picker';
 
-<MaterialUiIconPicker>Example</MaterialUiIconPicker>
+<MaterialUiIconPicker onPick={this.showPickedIcon} />
 ```
 
 ### Properties
+| --- | --- | --- | --- |
+| **onPick**| *function* | *required* | Gets called when the user chooses an icon |
+| --- | --- | --- | --- |
+| **label**| *string* | *optional* | Defaults to `'Pick icon'`, it's the the label of the button that opens the dialog |
+| --- | --- | --- | --- |
+| **pickLabel**| *string* | *optional* | Defaults to `'Pick'`, it's the the label of the primary dialog button |
+| --- | --- | --- | --- |
+| **cancelLabel**| *string* | *optional* | Defaults to `'Cancel'`, it's the label of the secondary dialog button |
+| --- | --- | --- | --- |
+| **modalTitle**| *string* | *optional* | Defaults to `'Material icon picker'`, it's the title of the modal |
+|--- | --- | --- | --- |
 
-* __DOCUMENT PROPERTIES HERE__
+
 
 ### Notes
 
-__ADDITIONAL USAGE NOTES__
+The list gets fetched directly from `https://raw.githubusercontent.com/google/material-design-icons/master/iconfont/codepoints`.
+One of the dependencies breaks the build with `npm start` when using
+ 
+```
+gulp -v
+CLI version 1.4.0
+Local version 3.9.1
+
+```
+To fix this
 
 ```
 cd node_modules/gulp-git/
@@ -60,7 +81,7 @@ To build, watch and serve the examples (which will also watch the component sour
 
 ## License
 
-__PUT LICENSE HERE__
+See LICENSE
 
 Copyright (c) 2017 Daniele De Matteo.
 
