@@ -64,6 +64,8 @@ class MyComponent extends React.Component {
 
 ### Notes
 
+This project was bootstrapped with [https://github.com/JedWatson/generator-react-component](https://github.com/JedWatson/generator-react-component)
+
 The list gets fetched directly from `https://raw.githubusercontent.com/google/material-design-icons/master/iconfont/codepoints`.
 One of the dependencies breaks the build with `npm start` when using
  
