@@ -31,10 +31,23 @@ npm install react-material-ui-icon-picker --save
 
 ## Usage
 
-```
+```javascript
+import React from 'react';
 import MaterialUiIconPicker from 'react-material-ui-icon-picker';
 
-<MaterialUiIconPicker onPick={this.showPickedIcon} />
+class MyComponent extends React.Component {
+    
+    showPickedIcon = (icon) => {
+        console.info(icon) // prints {name: "access_alarm", code: "e190"}
+    }
+    
+    render() {
+        return (
+            <MaterialUiIconPicker onPick={this.showPickedIcon} />
+        )
+    }
+}
+
 ```
 
 ### Properties
