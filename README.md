@@ -31,8 +31,6 @@ npm install react-material-ui-icon-picker --save
 
 ## Usage
 
-__EXPLAIN USAGE HERE__
-
 ```
 import MaterialUiIconPicker from 'react-material-ui-icon-picker';
 
@@ -40,17 +38,14 @@ import MaterialUiIconPicker from 'react-material-ui-icon-picker';
 ```
 
 ### Properties
+| Property|Type|Required|description
 | --- | --- | --- | --- |
 | **onPick**| *function* | *required* | Gets called when the user chooses an icon |
-| --- | --- | --- | --- |
 | **label**| *string* | *optional* | Defaults to `'Pick icon'`, it's the the label of the button that opens the dialog |
-| --- | --- | --- | --- |
 | **pickLabel**| *string* | *optional* | Defaults to `'Pick'`, it's the the label of the primary dialog button |
-| --- | --- | --- | --- |
 | **cancelLabel**| *string* | *optional* | Defaults to `'Cancel'`, it's the label of the secondary dialog button |
-| --- | --- | --- | --- |
 | **modalTitle**| *string* | *optional* | Defaults to `'Material icon picker'`, it's the title of the modal |
-|--- | --- | --- | --- |
+
 
 
 
