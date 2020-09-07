@@ -29,7 +29,7 @@ export default class IconsStorage {
 
 		this.isLoadingIcons = true;
 
-		return fetch('https://raw.githubusercontent.com/google/material-design-icons/master/iconfont/codepoints')
+		return fetch('https://raw.githubusercontent.com/google/material-design-icons/3.0.2/iconfont/codepoints')
 			.then(response => response.text())
 			.then(data => data.split('\n'))
 			.then(namesAndCodes => namesAndCodes.map(nameAndCode => {
